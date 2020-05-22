@@ -90,7 +90,7 @@ submit.addEventListener("click", () => {
         let boxes = document.createElement("div");
         boxes.classList.add("box");
         console.log(boxes);
-        let randomNum = Math.ceil(Math.random() * 100);
+        let randomNum = Math.ceil(Math.random() * 10000);
         let img = document.createElement("img");
         img.src = `https://source.unsplash.com/random/500x500/?sig=${randomNum}&${keyword}`;
         boxes.appendChild(img);
@@ -109,7 +109,11 @@ clear.addEventListener("click", () => {
         // boxes.removeChild(boxes[i]);
         boxes[i].remove();
     }
-    boxNum = 0;
+    // boxNum = 0; - not needed
     // let boxes = wrapper.querySelectorAll(".box");
     // console.log(boxes);
 })
+
+//wrapper.removeChild(wrapper.firstChild);
+
+// let boxNum = input.value;
